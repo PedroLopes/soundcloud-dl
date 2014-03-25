@@ -7,3 +7,11 @@ if [ "$RESP" = "y" ]; then
 else
   echo "Quitting."
 fi
+read -p "Wanna install system wide and rename to soundcloud-dl (/usr/local/bin) [y/n]" RESP2
+if [ "$RESP2" = "y" ]; then
+   cp scdl.sh soundcloud-dl 
+   sudo mv soundcloud-dl /usr/local/bin
+   echo "Awesome, now invoke anywhere with soundcloud-dl [URL]"
+else
+  echo "Quitting."
+fi
