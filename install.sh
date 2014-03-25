@@ -7,5 +7,3 @@ if [ "$RESP" = "y" ]; then
 else
   echo "Quitting."
 fi
-#sed -i "1i cd $dir" scdl.sh
-#echo "$dir"

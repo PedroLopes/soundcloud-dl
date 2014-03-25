@@ -24,7 +24,8 @@ Instructions
 --------------
 * Clic "Donwload as zip" (at the right)
 * Unzip
-* Place scdl.sh where you want to download the music or add a `cd /placewhereyouwanttodownloadmusic` at the begining of the script
+* chmod +x install.sh; chmod +x install-dependencies-apt-get.sh 
+* Run ./install.sh (it asks you for the directory where downloaded music files go to -- just type it in, it will ask for confirmation before adding it [y/n])
 * Apply executable permissions `chmod +x scdl.sh`
 * Usage: `./scdl.sh [URL]`
 
@@ -60,4 +61,4 @@ The script cannot handle letters like `û` cause to recode. But if i remove it, 
 
 License
 --------------
-[GPL v2](https://www.gnu.org/licenses/gpl-2.0.txt), orignal author [Luka Pusic](http://pusic.si)
+[GPL v2](https://www.gnu.org/licenses/gpl-2.0.txt), orignal author [Luka Pusic](http://pusic.si), Pedro Lopes forked it just to add some tweaks for my private usage -- full credits to the author Luka for such a great tool. 
