@@ -1,0 +1,11 @@
+read -s -p "Enter path to directory to save music too (full path):" dir
+echo ...
+read -p "Wanna use $dir as the music download dir? [y/n]" RESP
+if [ "$RESP" = "y" ]; then
+   sed -i "1i cd $dir" scdl.sh
+   ./install-dependencies-apt-get.sh 
+else
+  echo "Quitting."
+fi
+#sed -i "1i cd $dir" scdl.sh
+#echo "$dir"
